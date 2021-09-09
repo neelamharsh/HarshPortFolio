@@ -1,0 +1,511 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+.foo
+{
+    position: fixed;
+    bottom: 15px;
+    right: 26px;
+    font-size: 18px;
+    color: blue;
+}
+
+.icon
+{
+    position: fixed;
+    top: 8px;
+    right: 12px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 2px;
+    color: blue !important;  
+    display: none;  
+    background-color: whitesmoke;
+}
+
+
+u
+{
+    text-decoration-color: rgba(5, 89, 145, 0.541);
+    text-decoration-thickness: 3px;
+}
+
+hr
+{
+    color: gray;
+}
+
+.navbar
+{
+    background-color: white;
+    color: rgba(14, 113, 206, 0.877);
+    margin: 0vw 20vw; 
+    border-bottom: 5px solid whitesmoke;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+a:visited
+{
+    color: inherit;
+}
+
+a:active
+{
+    color: inherit;
+}
+
+.overlay
+{
+    background: url(https://www.business.com/images/content/5ca/3e1aa5a215e8a458bb313/1500-0-);
+    background-size: cover;
+}
+
+.main
+{
+    background-color: rgba(100, 148, 237, 0.856);
+    height: 50vw;
+}
+
+.innermain
+{
+    padding: 9vw;
+    text-align: center;
+}
+
+h1
+{
+    color: white;
+    font-size:8.5vw;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+h2
+{
+    color:rgba(24, 24, 121, 0.705);
+    font-size: 2.2vw;
+}
+
+
+.btn
+{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin: 1vw;
+    padding: 1vw 1vw;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.btn:hover
+{
+    background-color: whitesmoke;
+    color:  cornflowerblue;
+}
+
+.usocial 
+{
+    font-size: 2vw;
+    color: white;
+}
+
+.usocial i
+{
+    margin: 0.5vw;
+    color: white;
+}
+
+.usocial i:hover
+{
+    background-color: rgba(24, 24, 121, 0.705);
+    padding: 1px;
+}
+
+
+/*About &&&&&&&&&&&&&&&& */
+.about
+{
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innerabout
+{
+    padding: 100px 100px 0px 50px;
+    font-size:xx-large;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.aboutdesc
+{
+    padding: 50px;
+    width: 80%;
+}
+
+
+/* Rank and Ratin @@@@@@@@@@@@@@@@@@ */
+
+.rankdesc
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3vw 12vw 0vw 12vw;
+}
+
+.subrankdesc
+{
+    padding: 1VW 5vw 0vw 5vw;
+    text-align: center;
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+
+.subrankdesc img
+{
+    width: 12vw;
+    height: 12vw;;
+    border-radius: 50%;
+}
+
+.rankdesc a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*Education @@@@@@@@@@@@@@@@@@@@@ */
+
+.e1
+{
+    margin: 2vw 12vw;
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
+    padding: 3vw;
+}
+
+.insname
+{
+    font-size: large;
+}
+
+.edudesc
+{
+    color:rgb(58, 57, 57);
+}
+
+.project, .educationir, .skillsinr, .innerrank, .innercertificates, .innerexp
+{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size:xx-large;
+    letter-spacing: 5px;
+}
+
+
+
+
+/* Project ################### */
+
+h3
+{
+    letter-spacing: 1px;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 1;
+    text-align: center;
+}
+
+.info
+{
+    margin:auto 5vw;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 80;
+}
+
+.techno
+{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.innertechno
+{
+    background-color:rgb(209, 209, 209);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.projects
+{
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.p1
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vw 12vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 22px #888888;
+}
+
+.desc
+{
+    text-align: center;
+    width: 100%;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+}
+
+/* Certificates $$$$$$$$$$$$$$$$$$$ */
+
+
+.certficates
+{
+    background-color: whitesmoke;
+}
+
+.certificate
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.c1 img
+{
+    width: 25vw;
+    min-width:300px;
+    padding: 2VW 0vw 0vw 0vw;
+    overflow:scroll;
+}
+
+/*Expirences #####################*/
+
+.experiences
+{
+    background-color: white;
+}
+
+.expdesc
+{ 
+    border-radius: 5px;
+    margin: 10px;
+    min-height:280px;
+}
+
+.expdesc img
+{
+    width: 20vw;
+    min-width: 200px;
+    height:auto;
+    margin: 2vw;
+    float: left;
+    padding: 10px;
+    border-right: solid 2px black;
+}
+
+
+.expdesc h1
+{
+    color: black !important;
+    font-weight: 100;
+    font-size: 5vw;
+}
+
+.expdesc p
+{
+    margin: 1vw;
+}
+
+/* Skills ##################### */
+
+.Skills
+{
+    background-color: whitesmoke;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.subcontainer
+{
+    background-color:rgb(209, 209, 209);
+    font-size: 1.8vw;
+    padding: 10px;
+    text-align: center;
+    margin: 1.5vw;
+}
+
+.contact
+{
+    background-color: rgba(14, 113, 206, 0.877);
+    width: 100%;
+}
+
+.contactinr
+{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 50px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+
+/* Contact %%%%%%%%%%%%%%%%%% */
+
+.contactdesc
+{
+    max-width: 450px;
+    margin: auto;
+    padding: 10px;
+}
+
+input,textarea
+{
+    
+    width:100%;
+    background-color: #084b7afa;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    resize: none;
+    font-size: 18px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+
+::placeholder{
+    color: white;
+}
+
+textarea
+{
+    height: 200px !important;
+}
+
+input:focus
+{
+    border: none;
+}
+
+button
+{
+    width: 100%;
+    border: 1px solid rgb(3, 46, 165);
+    border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(5, 93, 255);
+    margin: 10px 0px;
+    background-color: white;
+}
+
+button:hover
+{
+    background-color: #084b7afa;
+    border: 1px solid rgb(255, 255, 255);
+    color: whitesmoke;
+}
+
+.footerinr
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3vw;
+    color: rgb(48, 47, 47);
+    font-size: 15px;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footer li
+{
+    margin: 0.5vw;
+}
+
+
+ul
+{
+    list-style-type: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+li
+{
+    margin-top: 1vw;
+    float: left;
+    word-wrap: wrap;
+}
+
+li a
+{
+    text-decoration: none;
+}
+
+li:hover
+{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.copyright
+{
+    margin: 0.5vw;
+    color: rgb(12, 12, 12);
+}
+
+.social i
+{
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px !important;
+}

@@ -1,302 +1,544 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/704b39ba98.js" crossorigin="anonymous"></script>
+    <title>HarshPortFolio</title>
+    <link href="stylymain.css" rel="stylesheet" />
 
-<title>HarshPorwal/Portfolio</title>
-<link rel = "icon" href =  
-"https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Harsh1.jpeg" 
-type = "image/x-icon"> 
+    <style>
 
-<meta name="google-site-verification" content="lUFRdnaeaR1B2hdAMCNbDfWcvMoQLz7fX5Li477iWHU" />
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-a {
-  text-decoration: none;
+@media screen and (max-width: 800px) {
+  .navbar {display: none;}
+   a.icon {
+    float: right;
+    display: block;
+  }
 }
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
-
-
-
-
-</style>
+    @media screen and (max-width: 800px) {
+  .navbar.responsive {
+      position: fixed;
+      width: 100%;
+      margin: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  .navbar.responsive a.icon {
+    position: fixed;
+    background-color: whitesmoke;
+    padding: 10px 10px !important;
+  }
+  .navbar.responsive a {
+    float: none;
+    padding: 10px 30vw;
+    display: block;
+    text-align: left;
+    font-size: 3vw;
+  }
+}
+    </style>
 
 </head>
+<body>
 
-<body class="w3-black" background="https://i.pinimg.com/originals/5b/c8/9f/5bc89f56f2fcba5cecbe0907ffae8d4c.gif">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Harsh1.jpeg" style="width:100%">
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#Certificates" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Certificates</p>
-  </a>
-  <a href="#Achivements" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-star w3-xxlarge"></i>
-    <p>Achivements</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#home" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:34% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center" id="home">
-
-    <h1 class="w3-jumbo">I'm Harsh Porwal.</h1>
-    <p>Web Designer||AndroidDeveloper||Coder.</p>
-    <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Harsh1.jpeg" alt="profile_images" class="w3-image" width="292" height="408">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Harsh Porwal</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>My name is Harsh Porwal. I am currently Pursuing B.tech (Hons.) from lovely Professional university in the department of computer science and engineering. 
-    <br>
-    I belongs from Etawah, Uttar Pradesh. I did my higher secondary education from Holy Point Academy (CBSE board).
-    <br>
-    My hobbies are coding, listening to music and travelling. 
+    <p class="foo">
+        <a href="#main">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">C++</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+
+    <div class="overlay">
+    <div class="main" id="main">
+
+        <div class="navbar" id="navbarid">
+            
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#RRating">Rank & Rating</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#expr">Experiences</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                   
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+            <i class="fa fa-bars"></i>
+        </a>
+        
+        <script>
+            document.getElementById("navbarid").onclick = function() {myFunction()};
+            
+            function myFunction() {
+                var x = document.getElementById("navbarid");
+                if(x.className != "navbar")
+                {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+
+        <script>
+        
+        function myFunction() {
+            var x = document.getElementById("navbarid");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+        </script>
+
+        
+
+        <div class="innermain">
+        <h1>Harsh Porwal</h1>
+        <h2>Computer Science Student | Lovely Professional University</h2>
+        <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+
+        <div class="usocial">
+            <a href="https://github.com/neelamharsh" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harshporwal11907711/" target="blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:porwalharsh2772001" target="blank"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        </div>
+
     </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Android Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
+
+    <div class="about" id="about">
+       
+        <p class="innerabout">
+            Ab<u>outM</u>e
+        </p>
+
+        <p class="aboutdesc">
+            
+            I am an undergraduate student, currently in my Third year, pursuing Integrated B.Tech(Hons.) in Computer Science at Lovely Professional University - Punjab.<br><br>
+            I am a coding enthusiast, a proficient web developer and love to learn and enjoy implementing technology supported solutions to the problems I face.<br><br>
+            
+        </p>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">8.1+</span><br>
-        CJPA
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">8+</span><br>
-        Certificates
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Courses
-      </div>
     </div>
 
-  <a href="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Resume.png" download>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-  </a>
+     <!--- Education#######################################-->
+
+
+    <div class="education" id="education">
+
+        <div class="educationir">
+            Ed<u>ucat</u>ion
+        </div>
+
+        <div class="e1">
+
+            <div class="desc">
+
+            <p>
+
+                <div class="insname">Lovely Professional University</div>
+                <div class="edudesc">
+                <br>2019-2023
+                <br>B.tech in Computer Science
+                <br>CJPA:8.24/10.0
+                </div>
+
+            </p>
+        
+             </div>
+                
+        </div>
+
+        <div class="e1">
+
+            <div class="desc">
+
+            <p>
+
+                <div class="insname">Holy Point Academy</div>
+                <div class="edudesc">
+                <br>2018-2019
+                <br>12th
+                <br>Percentage -87.5
+                </div>
+
+            </p>
+        
+             </div>
+                
+        </div>
+
+        <div class="e1">
+
+            <div class="desc">
+
+            <p>
+
+                <div class="insname">Lord Mother Public School</div>
+                <div class="edudesc">
+                <br>2016-207
+                <br>10th
+                <br>CJPA:10.0/10.0
+                </div>
+
+            </p>
+        
+             </div>
+                
+        </div>
+
+    </div>
+
+
+
+
+    <!--- Projects#######################################-->
+
+
+
+
+
+
+    <div class="projects" id="projects">
+
+        <div class="project">
+            Pr<u>ojec</u>ts
+        </div>
+
+        <div class="p1">
+
+
+            <div class="desc">
+
+            <p>
+               
+                <h3>Order Book.</h3>
+                
+                <div class="info">
+                This is the c++ based project. In this project user can 
+                maintain there order digitally.
+                <br>With the help of this project user can edit, save, delete ore retrive the data easily.</div>
+
+                <div class="techno">
+                    <div class="innertechno">C++</div>
+                    <div class="innertechno">File handling</div>
+                </div>
+
+            </p>
+        
+             </div>
+                
+        </div>
+
+        <div class="p1">
+
+            <div class="desc">
+
+            <p>
+
+                <h3>Find Your Vaccine Slot.</h3>
+               
+                <div class="info">
+                    With the help of this project user can check its nearby vaccine slot.<br> This is a HTML based project.
+                 </div>
+
+                 <div>
+                    <a href="https://neelamharsh.github.io/FindYourSlot/" target="blank"><i class="fa fa-eye" aria-hidden="true" style="color: grey;"> Click to view</i></a>
+                 </div>
     
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Projects</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Programming</li>
-          <li class="w3-padding-16">Cricket simulator/C++</li>
-          <li class="w3-padding-16">Order management/c++</li>
-          <li class="w3-padding-16">Admission Registration/Python+DBMS</li>
-        </ul>
-      </div>
+                    <div class="techno">
+                        <div class="innertechno">HTML</div>
+                        <div class="innertechno">CSS</div>
+                        <div class="innertechno">J-Quary</div>
+                        <div class="innertechno">API'S</div>
+                    </div>
+    
 
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Android Development</li>
-          <li class="w3-padding-16">Daily News App</li>
-          <li class="w3-padding-16">Love Calculator</li>
-          <li class="w3-padding-16">Notification Alert System</li>
-        </ul>
-      </div>
+            </p>
+        
+             </div>
+                
+        </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Web Development</li>
-          <li class="w3-padding-16">Retail Shop Website</li>
-          <li class="w3-padding-16">Real State Website</li>
-          <li class="w3-padding-16">Portfolio</li>
-        </ul>
-      </div>
+        <div class="p1">
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32 w3-margin-top">miscellaneous</li>
-          <li class="w3-padding-16">Fllapy Bird/Unity</li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
+            <div class="desc">
+
+                <p>
+               
+                    <h3>University Notification System</h3>
+                    
+                    <div class="info">
+                    This is an Android based project.<br> In this project user can check there notification about any event which is held inside the university.
+                    <br>With the help of this project user can edit, save, delete ore retrive the data using mobile application.</div>
+    
+                    <div class="techno">
+                        <div class="innertechno">Android</div>
+                        <div class="innertechno">Fire Base</div>
+                    </div>
+    
+                </p>
+            
+             </div>
+                
+        </div>
+
+        <hr style="margin-top: 100px;">
+
+    </div>
+
+
+    
+    <!--- Rank#######################################-->
+
+
+
+    <div class="ranks" id="RRating">
+
+
+        <div class="innerrank">Ra<u>nk and Rati</u>ng</div>
+
+        <div class="rankdesc">
+
+
+        <a href="https://auth.geeksforgeeks.org/user/neelamharsh/practice/" target="blank">
+            <div class="subrankdesc">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLTBiDouO3A3z9x7RCzehRqJGkV6xnlxcREz6BuTvA=s900-c-k-c0x00ffffff-no-rj"/>
+        <br><span>GFG ~ Neelamharsh</span>
+        <br><span>Solved 465+ Problems</span>
+             </div></a>
+
+        <a href="https://www.codechef.com/users/neelamharsh55" target="blank">
+             <div class="subrankdesc">
+        <img src="https://icons-for-free.com/iconfiles/png/512/codechef-1324440139527402917.png"/>
+        <br><span>Codechef ~ neelamharsh</span>
+        <br><span>Rating ~ 1725 Max</span>
+             </div></a>
+
+        <a href="https://leetcode.com/neelamharsh/" target="blank">
+             <div class="subrankdesc">
+        <img src="https://pathrise-website-guide-wp.s3.us-west-1.amazonaws.com/guides/wp-content/uploads/2019/05/10175228/images-11.png"/>
+        <br><span>Leetcode ~ Neelamharsh</span>
+        <br><span>Rating ~ 1609</span>
+             </div></a>
+
+        <a href="https://codeforces.com/profile/neelamharsh" target="blank">
+             <div class="subrankdesc">
+        <img src="https://apprecs.org/gp/images/app-icons/300/0b/com.SoftTechs.CodeForces.jpg"/>
+        <br><span>Codeforces ~ neelamharsh</span>
+        <br><span>Rating ~ 1107 Max</span>
+             </div></a>
+
+        <a href="https://www.hackerrank.com/Neelamharsh?hr_r=1" target="blank">
+             <div class="subrankdesc">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png"/>
+        <br><span>Hackerrank ~ Neelamharsh</span>
+        <br><span>5 Star on Problem Solving</span>
+             </div></a>
+
+        <a href="https://atcoder.jp/users/neelamharsh" target="blank">
+             <div class="subrankdesc">
+        <img src="https://www.andreafiori.net/img/competitive-programming/atcoder.gif"/>
+        <br><span>Atcoder ~ Neelamharsh</span>
+        <br><span>Rating ~ 56</span>
+             </div></a>
+
+        </div>
     </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-34 w3-text-light-grey">My Ranking</h3><a href="https://www.codechef.com/users/neelamharsh55">
-    <img src="https://yt3.ggpht.com/ytc/AAUvwnhAFZgqXiTg3WS7ZFI6byv7sBAVxE9j8T6Cioa8rw4=s900-c-k-c0x00ffffff-no-rj" alt="Codechef" class="w3-left w3-circle w3-margin-right w3-margin-34" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Codechef.</span> 2 star.</p></a><br><br><br>
-      <a href="https://auth.geeksforgeeks.org/user/neelamharsh/practice/">
-    <img src="https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q.jpg" alt="GFG" class="w3-left w3-circle w3-margin-right w3-margin-64" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Geeks For Geeks.</span> 409.</p></a><br><br>
-    <a href="https://www.hackerrank.com/Neelamharsh?hr_r=1">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="Hackerrank" class="w3-left w3-circle w3-margin-right w3-margin-34" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-margin-top">Hackerrank.</span> Gold Badge.</p></li></a>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="Certificates">
-    <h2 class="w3-text-light-grey">My Certificates</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for Certificates -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="https://github.com/neelamharsh/HarshPortFolio/blob/master/C%20Intermediate.png?raw=true" alt="c_intermediate_certificate" style="width:100%">
-         <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/python.png" alt="python_certificate" style="width:100%">
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/c%2B%2BBasix.png" alt="c_basic_certificate" style="width:100%">
-      </div>
+    <!--- Certificates #####################################-->
 
-      <div class="w3-half">
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/download.png" alt="problem_solving_certificate" style="width:100%">
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/CodingNInga.png" alt="CodingNInga_certificate" style="width:100%">
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Harsh.jpg" alt="machine_learning_certificate" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+
+    <div class="certficates" id="certificates">
+        <hr style="margin-top: 3vw;">
+
+        <div class="innercertificates">ce<u>rtificat</u>es</div>
+
+        <div class="certificate">
+
+            <div class="c1">
+                <img src="CODING441.png" alt="CODING441"/>
+            </div>
+
+            <div class="c1">
+                <img src="KICKSTART.png" alt="KICKSTART"/>
+            </div>
+
+            <div class="c1">
+                <img src="C_INTERMEDIATE.png" alt="C_INTERMEDIATE"/>
+            </div>
+
+            <div class="c1">
+                <img src="C++BASIC.png" alt="C++BASIC"/>
+            </div>
+
+            <div class="c1">
+                <img src="CODINGNINJA280.png" alt="CODINGNINJA280"/>
+            </div>
+
+            <div class="c1">
+                <img src="CODINGNINJA115.png" alt="CODINGNINJA115"/>
+            </div>
+
+            <div class="c1">
+                <img src="PRBLMSOLBASIC.png" alt="PRBLMSOLBASIC"/>
+            </div>
+
+            <div class="c1">
+                <img src="PYTHONTRAINING.png" alt="PYTHONTRAINING"/>
+            </div>
+
+            <div class="c1">
+                <img src="WEBDEVELOPMENT.png" alt="WEBDEVELOPMENT"/>
+            </div>
+
+            <div class="c1">
+                <img src="ML.jpg" alt="ML"/>
+            </div>
+
+            <div class="c1">
+                <img src="INFINTELOOP.png" alt="INFINTELOOP"/>
+            </div>
+
+            <div class="c1">
+                <img src="JUMPSTART.png" alt="JUMPSTART"/>
+            </div>
+
+        </div>
+
+        <hr style="margin-top: 3vw;">
+
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+     <!---Experiences @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
-<details>
-  <summary style="cursor: pointer; text-align: center; border:none;">More</summary>
-<div class="w3-padding-64 w3-content">
-    <div class="w3-row-padding" style="margin:8px -16px">
-      <div>
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/Web.png" alt="webdesign" style="width:100%">
-      </div>
+     <div class="experiences" id="expr" >
 
-      <div>
-        <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/280.png" alt="CodingNIngaEvent" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+
+        <div class="innerexp">E<u>xpirenc</u>es</div>
+
+        <div class="expdesc">
+
+                
+                <img src="hacktoberfest.jpeg" alt="HACKTOBERFEST.png"/>
+                <br>
+                <h1>Hack - to - ber - fest</h1>
+                <p>
+                    I completed my first open source project with hack-to-ber-fest 2020.
+                    <br><br>
+                    I learnt many of the new things from this open source contest like what is github,pull,push etc. The experiance was quite new to me and i also completed my task, I submitted all the 4 projects which i developed during the contents and win this beautiful t-shirt and other swags.
+                </p>
+        </div>
+        
+
+     </div>
+
+
+
+    <!--- Skills#######################################-->
+
+
+    <div class="Skills" id="Skills">
+
+        <div class="skillsinr">
+            S<u>Kill</u>s
+        </div>
+
+        <div class="flexcontainer">
+
+
+            <div class="container">
+                <div class="subcontainer">Web Development</div>
+                <div class="subcontainer">MySql</div>
+                <div class="subcontainer">Androind</div>
+            </div>
+
+            <div class="container">
+                <div class="subcontainer">C</div>
+                <div class="subcontainer">Python</div>
+                <div class="subcontainer">C++</div>
+                <div class="subcontainer">Data Structure and Algorithms</div>
+            </div>
+            
+            <div class="container">
+                <div class="subcontainer">Linux</div>
+                <div class="subcontainer">Java Script</div>
+                <div class="subcontainer">Project Management</div>
+            </div>
+
+        </div>
+
     </div>
-  <!-- End Portfolio Section -->
-  </div>
 
-</details>
+    <!---Contact @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
-  <!-- Achivements Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="Achivements">
-      <h2 class="w3-text-light-grey">Achivements</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-<div class="container-fluid bg-1 text-center" id="Hacktober-fest-2020">
-  <h2 class="w3-text-light-grey"><i> # Hacktober-fest-2020</i></h2>
-  <img src="https://raw.githubusercontent.com/neelamharsh/HarshPortFolio/master/hacktoberfest.jpeg"
-  alt="Hacktober-fest-2020" class="img-responsive" style="width:100%">
-</div>
+    <div class="contact" id="contact">
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <p>I completed my first open source project with hack-to-ber-fest 2020.</p>
-  <p>I learnt many of the new things from this open source contest like what is github,pull,push etc. This experiance was quite new to me and i also completed my task, I submitted all the 4 projects which i developed during the contents and win this beautiful t-shirt and other swags.
-</div>
+        <div class="contactinr">
+            Ge<u>t in Tou</u>ch
+        </div>
+
+        <div class="contactdesc">
+
+            <form action="https://formspree.io/f/mrgrrdzv"  method="POST">
+                <label>
+                     <input type="email" placeholder="Email" name="_replyto" required>
+                </label>
+                <label>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+
+        <hr style="margin-top: 20px;">
+
     </div>
-  
-
- 
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
 
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDmxJ0meZ9Fd2HssyOFGozbpNNBAtgJC1sO0Po6Hix4D2qvg/viewform?embedded=true"  width="100%" height="1012px" frameborder="0" leftmargin="0px" class="w3-opacity">Loading…</iframe>
+    <!---Footer @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Etawah, U.P.</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="tel:7668182898">7668182898</a></p>
-      <p><a href="mailto:porwalharsh2772001"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>porwalharsh2772001@gmail.com</p></a><i class="fa fa-whatsapp
-      fa-fw w3-text-white w3-xxlarge w3-margin-right"><a href="https://api.whatsapp.com/send?phone=7037020440">
-      </i>7037020440</a></p>
-    </div><br>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://www.facebook.com/harshporwal1907711">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/har55h_/">
-    <i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/iharsh55">
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-  </a>
-    <a href="https://www.linkedin.com/in/harshporwal11907711/">
-    <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/neelamharsh">
-    <i class="fa fa-github w3-hover-opacity"></i></a>
-    <p class="w3-medium">Thankyou</p>
-  <!-- End footer -->
-  </footer>
+    <div class="footer">
 
-<!-- END PAGE CONTENT -->
-</div>
+        <div class="footerinr">
 
-<div class="w3-hover-black">
-  <script type="text/javascript" language="javascript">
-      var aax_size='300x600';
-      var aax_pubname = 'harshio-21';
-      var aax_src='302';
-    </script>
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        <div class="copyright">
+            copyright © 2021 Harsh Porwal'
+        </div>
 
-  </div>
+        <div class="social">
+           
+            <ul>
+                <li><a href="https://github.com/neelamharsh" target="blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/harshporwal11907711/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:porwalharsh2772001" target="blank"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.facebook.com/harshporwal1907711" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/__.harssh._/" target="blank"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://twitter.com/iharsh55" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    </div>
+
 
 </body>
-</html>
 
+</html>
