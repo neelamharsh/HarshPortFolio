@@ -315,6 +315,19 @@ img
 
 /*Expirences #####################*/
 
+@media screen and (max-width: 800px) {
+    .expdesc
+    {
+        text-align: center !important;
+    }
+
+    .expdesc img
+    {
+        width:80vw !important;
+        margin: 2vw 8vw !important;
+    }
+  }
+
 .experiences
 {
     background-color: white;
@@ -329,13 +342,15 @@ img
 
 .expdesc img
 {
-    width: 20vw;
+    width: 30vw;
     min-width: 200px;
     height:auto;
     margin: 2vw;
     float: left;
-    padding: 10px;
+    padding: 0px;
     border-right: solid 2px black;
+    border: 2px solid rgb(3, 131, 12);
+    border-radius: 5px;
 }
 
 
