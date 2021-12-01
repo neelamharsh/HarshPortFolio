@@ -11,40 +11,43 @@
     <title>Portfolio/HarshPorwal</title>
     <link href="stylymain.css" rel="stylesheet" />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/63148170?v=4" type="image/icon type">
+   
+
     <style>
 
-@media screen and (max-width: 800px) {
-  .navbar {display: none;}
-   a.icon {
-    float: right;
-    display: block;
-  }
-}
+        @media screen and (max-width: 800px) {
+          .navbar {display: none;}
+           a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+        
+            @media screen and (max-width: 800px) {
+          .navbar.responsive {
+              position: fixed;
+              width: 100%;
+              margin: 0px;
+              display: flex;
+              flex-wrap: wrap;
+            }
+          .navbar.responsive a.icon {
+            position: fixed;
+            background-color: whitesmoke;
+            padding: 10px 10px !important;
+          }
+          .navbar.responsive a {
+            float: none;
+            padding: 10px 30vw;
+            display: block;
+            text-align: left;
+            font-size: 3vw;
+          }
+        }
+            </style>
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-    @media screen and (max-width: 800px) {
-  .navbar.responsive {
-      position: fixed;
-      width: 100%;
-      margin: 0px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  .navbar.responsive a.icon {
-    position: fixed;
-    background-color: whitesmoke;
-    padding: 10px 10px !important;
-  }
-  .navbar.responsive a {
-    float: none;
-    padding: 10px 30vw;
-    display: block;
-    text-align: left;
-    font-size: 3vw;
-  }
-}
-    </style>
 
 </head>
 <body>
@@ -63,7 +66,7 @@
                     <a href="#about">About</a>
                     <a href="#education">Education</a>
                     <a href="#projects">Projects</a>
-                    <a href="#RRating">Rank & Rating</a>
+                    <a href="#RRating">Ranks</a>
                     <a href="#certificates">Certificates</a>
                     <a href="#expr">Experiences</a>
                     <a href="#Skills">Skills</a>
@@ -133,79 +136,88 @@
     
     </div>
 
+
      <!--- Education#######################################-->
 
 
-    <div class="education" id="education">
+     <div class="education1" id="education">
 
         <div class="educationir">
             Ed<u>ucat</u>ion
         </div>
 
-        <div class="card">
+        <div class="eduouter">
 
-        <div class="e1">
+            <div class="edu">
 
-            <div class="desc">
+                <div class="line">
+                    
+                    <div class="lineleft">
+                        Lovely Professional University
+                    </div>
 
-            <p>
+                    <div class="lineright">
+                        2019-2023
+                    </div>
 
-                <div class="insname">Lovely Professional University</div>
-                <div class="edudesc">
-                <br><br><br>2019-2023
-                <br>B.tech in Computer Science
-                <br>CJPA:8.24/10.0
                 </div>
 
-            </p>
-        
-             </div>
+                <div class="line2">
+                    B.tech(Hons) in Computer Science
+                </div>
                 
-        </div>
+            </div>
 
-        <div class="e1">
 
-            <div class="desc">
 
-            <p>
 
-                <div class="insname">Holy Point Academy</div>
-                <div class="edudesc">
-                <br><br><br>2018-2019
-                <br>12th
-                <br>Percentage -87.5
+            <div class="edu">
+
+                <div class="line">
+                    
+                    <div class="lineleft">
+                        Holy Point Academy
+                    </div>
+
+                    <div class="lineright">
+                        2018-2019
+                    </div>
+
                 </div>
 
-            </p>
-        
-             </div>
+                <div class="line2">
+                    12th | Percentage : 96%
+                </div>
                 
-        </div>
+            </div>
 
-        <div class="e1">
 
-            <div class="desc">
 
-            <p>
+            <div class="edu">
 
-                <div class="insname">Lord Mother Public School</div>
-                <div class="edudesc">
-                <br><br>2016-207
-                <br>10th
-                <br>CJPA:10.0/10.0
+                <div class="line">
+                    
+                    <div class="lineleft">
+                        Lord Mother Public School
+                    </div>
+
+                    <div class="lineright">
+                        2016-2017
+                    </div>
+
                 </div>
 
-            </p>
-        
-             </div>
+                <div class="line2">
+                    10th | CGPA - 10.0/10.0
+                </div>
                 
+            </div>
+
         </div>
+
+        
+
     </div>
-
-    </div>
-
-
-
 
     <!--- Projects#######################################-->
 
@@ -233,7 +245,9 @@
                 This is the c++ based project. In this project user can 
                 maintain there order digitally.
                 <br>With the help of this project user can edit, save, delete ore retrive the data easily.</div>
-
+                <div>
+                    <a href=" https://github.com/neelamharsh/OrderBook" target="_blank"><i class="fa fa-eye" aria-hidden="true" style="color: grey;"> Click to view</i></a>
+                 </div>
                 <div class="techno">
                     <div class="innertechno">C++</div>
                     <div class="innertechno">File handling</div>
@@ -297,8 +311,6 @@
              </div>
                 
         </div>
-
-        <hr style="margin-top: 100px;">
 
     </div>
 
@@ -366,7 +378,6 @@
 
 
     <div class="certficates" id="certificates">
-        <hr style="margin-top: 3vw;">
 
         <div class="innercertificates">ce<u>rtificat</u>es</div>
 
@@ -422,16 +433,15 @@
 
         </div>
 
-        <hr style="margin-top: 3vw;">
-
     </div>
+
+
      <!---Experiences @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
 
      <div class="experiences" id="expr" >
 
-
-        <div class="innerexp">E<u>xpirenc</u>es</div>
+        <div class="innerexp">E<u>xperienc</u>es</div>
 
         <div class="expdesc">
 
@@ -442,8 +452,8 @@
                 <p>
                     <br>
                     I completed my first open source project with hack-to-ber-fest 2020.
-                    <br><br>
-                    I learnt many of the new things from this open source contest like what is github,pull,push etc. The experiance was quite new to me and i also completed my task, I submitted all the 4 projects which i developed during the contents and win this beautiful t-shirt and other swags.
+                    <br>
+                    I have learnt many new things from this open source contest, like what is github,pull-request,push-request etc. The experience was quite new to me and i also completed my task, I submitted all the 4 projects which i developed during the contents and win this cool t-shirt and other swags.
                 </p>
         </div>
         
@@ -510,8 +520,6 @@
             </form>
 
         </div>
-
-        <hr style="margin-top: 20px;">
 
     </div>
 
