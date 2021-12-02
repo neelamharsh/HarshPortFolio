@@ -452,7 +452,7 @@ img
 {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 12px;
 }
 
 input,textarea
