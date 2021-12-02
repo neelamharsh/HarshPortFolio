@@ -99,27 +99,27 @@ h1
     font-size:7.5vw;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin: 26px;
+    margin-top: 5px;
 }
 
 h2
 {
     color:#a0cfee;
     font-weight: lighter;
+    font-size: 3vw;
 }
-
 
 .btn
 {
-    display: inline-block;
     margin: 2vw;
-    padding: 15px;
-    border: 3.2px solid white;
-    color:whitesmoke;
-    border-image: initial;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 1.2vw 2vw;
+    border: 3px solid #fff;
     border-radius: 30px;
+    transition: .5s ease all;
     text-decoration: none;
-    font-size:18px;
 }
 
 .btn:hover
