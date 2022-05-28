@@ -89,7 +89,7 @@ a:active
 
 .innermain
 {
-    padding: 9vw;
+    padding: 5vw;
     text-align: center;
 }
 
@@ -130,8 +130,8 @@ h2
 
 .usocial 
 {
-    margin: 2vw;
-    font-size: 20px;
+    margin: 5vw;
+    font-size: max(2vw,20px);
     color: white;
 }
 
@@ -152,13 +152,12 @@ h2
 .about
 {
     background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .innerabout
 {
-    padding: 100px 100px 0px 50px;
+    text-align: center;
+    padding-top: 150px;
     font-size:xx-large;
     letter-spacing: 5px;
     font-weight: 100;
@@ -166,9 +165,53 @@ h2
 
 .aboutdesc
 {
-    padding: 50px;
-    width: 80%;
+    font-size:max(1vw,20px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
 }
+
+
+.aboutImg
+{
+    width: 20%;
+    margin: 50px 50px 50px 100px;
+}
+
+.aboutImg img 
+{
+    border-radius: 20px;
+    width: 200px;
+    height: 400px;
+}
+
+.aboutText
+{
+    width: 60%;
+    margin: 14vw 0px 0px 0px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .aboutdesc
+    {
+        justify-content: center;
+    }
+
+    .aboutImg
+    {
+        width: 100%;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-bottom: 0px !important;
+    }
+
+    .aboutText
+    {
+        margin-top: 20px;
+        width: 90%;
+    }
+  }
 
 
 /* Rank and Rating @@@@@@@@@@@@@@@@@@ */
